@@ -1,0 +1,80 @@
+transaction_id,user_id,merchant_name,amount,category,category_confidence,timestamp
+txn_usr_ravi_0001,usr_ravi,Flipkart,2724,shopping,0.9893099252078885,2026-03-17T22:20:00Z
+txn_usr_ravi_0002,usr_ravi,FirstCry,1309,shopping,0.9586115261138364,2026-03-18T22:33:00Z
+txn_usr_ravi_0003,usr_ravi,Spencer's,286,groceries,0.9896624426286575,2026-03-18T11:34:00Z
+txn_usr_ravi_0004,usr_ravi,Croma,2213,shopping,0.9607532858576292,2026-03-18T22:47:00Z
+txn_usr_ravi_0005,usr_ravi,Behrouz Biryani,465,food,0.9772097878674348,2026-03-18T23:44:00Z
+txn_usr_ravi_0006,usr_ravi,Reliance Digital,588,shopping,0.9656722472479992,2026-03-19T22:02:00Z
+txn_usr_ravi_0007,usr_ravi,Taco Bell,686,food,0.9693663269941989,2026-03-19T22:18:00Z
+txn_usr_ravi_0008,usr_ravi,Social,507,food,0.9708283970697247,2026-03-19T22:15:00Z
+txn_usr_ravi_0009,usr_ravi,Subway,265,food,0.9526501296167466,2026-03-19T23:30:00Z
+txn_usr_ravi_0010,usr_ravi,Zara,2726,shopping,0.9806387124634821,2026-03-20T22:24:00Z
+txn_usr_ravi_0011,usr_ravi,BSNL,1499,bills,0.950548861036905,2026-03-20T15:05:00Z
+txn_usr_ravi_0012,usr_ravi,Yulu,702,transport,0.9619805560437551,2026-03-20T09:58:00Z
+txn_usr_ravi_0013,usr_ravi,Ajio,1986,shopping,0.9780515467430455,2026-03-20T23:20:00Z
+txn_usr_ravi_0014,usr_ravi,Dunzo,701,groceries,0.9873950567903519,2026-03-21T10:56:00Z
+txn_usr_ravi_0015,usr_ravi,Behrouz Biryani,395,food,0.9695212371039639,2026-03-22T22:25:00Z
+txn_usr_ravi_0016,usr_ravi,Safal,1346,groceries,0.9790326307935725,2026-03-23T15:01:00Z
+txn_usr_ravi_0017,usr_ravi,Zomato,352,food,0.9553052588369219,2026-03-23T10:17:00Z
+txn_usr_ravi_0018,usr_ravi,Reliance Digital,2866,shopping,0.9829221229204289,2026-03-23T23:47:00Z
+txn_usr_ravi_0019,usr_ravi,Barbeque Nation,617,food,0.9563302045656843,2026-03-24T22:19:00Z
+txn_usr_ravi_0020,usr_ravi,Subway,459,food,0.9603203553555302,2026-03-24T22:30:00Z
+txn_usr_ravi_0021,usr_ravi,KFC,373,food,0.9775397671414292,2026-03-25T22:49:00Z
+txn_usr_ravi_0022,usr_ravi,Flipkart,1196,shopping,0.9544548711892278,2026-03-25T23:37:00Z
+txn_usr_ravi_0023,usr_ravi,Wow Momo,368,food,0.9533374875956726,2026-03-26T22:48:00Z
+txn_usr_ravi_0024,usr_ravi,Zara,1650,shopping,0.9624965349862682,2026-03-26T23:57:00Z
+txn_usr_ravi_0025,usr_ravi,Westside,599,shopping,0.9686059394404303,2026-03-27T23:18:00Z
+txn_usr_ravi_0026,usr_ravi,Tata Cliq,2424,shopping,0.9533062451987072,2026-03-27T22:20:00Z
+txn_usr_ravi_0027,usr_ravi,Zomato,593,food,0.9790121376526533,2026-03-27T23:53:00Z
+txn_usr_ravi_0028,usr_ravi,Cafe Coffee Day,551,food,0.9833614491923452,2026-03-27T23:27:00Z
+txn_usr_ravi_0029,usr_ravi,Pizza Hut,260,food,0.9807071797979962,2026-03-28T10:52:00Z
+txn_usr_ravi_0030,usr_ravi,Behrouz Biryani,332,food,0.9570170071177382,2026-03-28T23:59:00Z
+txn_usr_ravi_0031,usr_ravi,BigBasket,134,groceries,0.9695552924714341,2026-03-29T16:13:00Z
+txn_usr_ravi_0032,usr_ravi,Cafe Coffee Day,691,food,0.9552304082212976,2026-03-29T22:52:00Z
+txn_usr_ravi_0033,usr_ravi,Baskin Robbins,534,food,0.9699603741451567,2026-03-29T23:31:00Z
+txn_usr_ravi_0034,usr_ravi,EatFit,865,food,0.9848424108001239,2026-03-29T17:25:00Z
+txn_usr_ravi_0035,usr_ravi,Swiggy,457,food,0.9868148333850033,2026-03-30T23:59:00Z
+txn_usr_ravi_0036,usr_ravi,Shoppers Stop,1456,shopping,0.9622909019701714,2026-03-30T23:17:00Z
+txn_usr_ravi_0037,usr_ravi,Taco Bell,528,food,0.9702806839788258,2026-03-31T22:19:00Z
+txn_usr_ravi_0038,usr_ravi,Behrouz Biryani,217,food,0.9654072937477738,2026-03-31T22:51:00Z
+txn_usr_ravi_0039,usr_ravi,Wow Momo,274,food,0.9579136933017172,2026-04-01T23:49:00Z
+txn_usr_ravi_0040,usr_ravi,Faasos,649,food,0.9597361794489719,2026-04-02T22:53:00Z
+txn_usr_ravi_0041,usr_ravi,Barbeque Nation,483,food,0.9747593990701336,2026-04-02T23:59:00Z
+txn_usr_ravi_0042,usr_ravi,Max Fashion,2674,shopping,0.9528068233466563,2026-04-02T23:47:00Z
+txn_usr_ravi_0043,usr_ravi,Bikanervala,774,food,0.9584979572309694,2026-04-02T23:23:00Z
+txn_usr_ravi_0044,usr_ravi,Flipkart,1893,shopping,0.9559606788612509,2026-04-03T22:43:00Z
+txn_usr_ravi_0045,usr_ravi,Taco Bell,326,food,0.9709037144892614,2026-04-03T23:30:00Z
+txn_usr_ravi_0046,usr_ravi,Zara,465,shopping,0.958861910583041,2026-04-03T09:32:00Z
+txn_usr_ravi_0047,usr_ravi,Lifestyle,876,shopping,0.9539952370728572,2026-04-03T22:23:00Z
+txn_usr_ravi_0048,usr_ravi,BluSmart,1236,transport,0.9617663987241842,2026-04-04T18:04:00Z
+txn_usr_ravi_0049,usr_ravi,Tata Cliq,650,shopping,0.9825481741051328,2026-04-04T09:17:00Z
+txn_usr_ravi_0050,usr_ravi,Adani Electricity,199,bills,0.9656236723593354,2026-04-04T18:38:00Z
+txn_usr_ravi_0051,usr_ravi,Shoppers Stop,2967,shopping,0.9851902721009612,2026-04-04T22:05:00Z
+txn_usr_ravi_0052,usr_ravi,Swiggy,667,food,0.9819372396537063,2026-04-05T22:57:00Z
+txn_usr_ravi_0053,usr_ravi,Baskin Robbins,686,food,0.971556860392123,2026-04-05T23:04:00Z
+txn_usr_ravi_0054,usr_ravi,Reliance Smart,897,groceries,0.9673712117948993,2026-04-06T14:32:00Z
+txn_usr_ravi_0055,usr_ravi,Indian Oil,1034,transport,0.9536997708358601,2026-04-06T14:14:00Z
+txn_usr_ravi_0056,usr_ravi,KFC,322,food,0.9552796935071151,2026-04-06T23:16:00Z
+txn_usr_ravi_0057,usr_ravi,Barbeque Nation,517,food,0.9582998095451448,2026-04-07T23:16:00Z
+txn_usr_ravi_0058,usr_ravi,McDonalds,838,food,0.9526886293044841,2026-04-07T18:45:00Z
+txn_usr_ravi_0059,usr_ravi,Social,425,food,0.9864411884719536,2026-04-08T22:25:00Z
+txn_usr_ravi_0060,usr_ravi,Ajio,2025,shopping,0.9649527568135523,2026-04-08T22:50:00Z
+txn_usr_ravi_0061,usr_ravi,Behrouz Biryani,712,food,0.9538912928696749,2026-04-08T14:35:00Z
+txn_usr_ravi_0062,usr_ravi,Zomato,440,food,0.9835356617106241,2026-04-08T22:26:00Z
+txn_usr_ravi_0063,usr_ravi,Adidas,1493,shopping,0.9627751459116517,2026-04-09T23:40:00Z
+txn_usr_ravi_0064,usr_ravi,Tata Cliq,2664,shopping,0.9875180153751772,2026-04-10T22:47:00Z
+txn_usr_ravi_0065,usr_ravi,Swiggy,269,food,0.9550418626921462,2026-04-11T22:51:00Z
+txn_usr_ravi_0066,usr_ravi,Cleartrip,1199,transport,0.9881864778066972,2026-04-11T18:20:00Z
+txn_usr_ravi_0067,usr_ravi,Croma,1663,shopping,0.9896515212902148,2026-04-12T22:30:00Z
+txn_usr_ravi_0068,usr_ravi,Zomato,785,food,0.9782574536495121,2026-04-12T22:09:00Z
+txn_usr_ravi_0069,usr_ravi,Pizza Hut,539,food,0.9798120606062604,2026-04-12T23:28:00Z
+txn_usr_ravi_0070,usr_ravi,Tata Cliq,2119,shopping,0.9722524507239496,2026-04-12T22:07:00Z
+txn_usr_ravi_0071,usr_ravi,Haldirams,349,food,0.9874013849196324,2026-04-13T22:32:00Z
+txn_usr_ravi_0072,usr_ravi,Amazon,1974,shopping,0.9647903638943673,2026-04-13T23:29:00Z
+txn_usr_ravi_0073,usr_ravi,Wow Momo,766,food,0.9805382083353557,2026-04-13T22:57:00Z
+txn_usr_ravi_0074,usr_ravi,Social,470,food,0.9791634744169495,2026-04-13T09:34:00Z
+txn_usr_ravi_0075,usr_ravi,Dominos,311,food,0.9743948812186546,2026-04-14T23:44:00Z
+txn_usr_ravi_0076,usr_ravi,Blue Tokai,241,food,0.961822613613078,2026-04-14T09:16:00Z
+txn_usr_ravi_0077,usr_ravi,Third Wave Coffee,767,food,0.9676841549715587,2026-04-14T22:20:00Z
+txn_usr_ravi_0078,usr_ravi,Social,266,food,0.9554609883713011,2026-04-14T22:10:00Z
+txn_usr_ravi_0079,usr_ravi,Swiggy,427,food,0.9856047529267654,2026-04-15T23:40:00Z
