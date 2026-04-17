@@ -1,62 +1,41 @@
 transaction_id,user_id,merchant_name,amount,category,category_confidence,timestamp
-txn_usr_priya_0001,usr_priya,Behrouz Biryani,708,food,0.9617320383635994,2026-03-17T19:05:00Z
-txn_usr_priya_0002,usr_priya,LIC Premium,999,bills,0.9692597967686188,2026-03-17T18:21:00Z
-txn_usr_priya_0003,usr_priya,Indraprastha Gas,999,bills,0.9631402122738907,2026-03-17T11:15:00Z
-txn_usr_priya_0004,usr_priya,Social,1434,food,0.9600918764603249,2026-03-18T16:44:00Z
-txn_usr_priya_0005,usr_priya,Amul,749,groceries,0.9838850711606232,2026-03-18T20:43:00Z
-txn_usr_priya_0006,usr_priya,EatFit,1301,food,0.9594814760489557,2026-03-19T21:50:00Z
-txn_usr_priya_0007,usr_priya,EatFit,1494,food,0.9567286078481536,2026-03-19T10:57:00Z
-txn_usr_priya_0008,usr_priya,Fastag,928,transport,0.962939076926363,2026-03-19T11:33:00Z
-txn_usr_priya_0009,usr_priya,Audible,1499,subscription,0.9507262417256086,2026-03-20T16:01:00Z
-txn_usr_priya_0010,usr_priya,LinkedIn Premium,499,subscription,0.9566731603335799,2026-03-20T15:25:00Z
-txn_usr_priya_0011,usr_priya,Sweet Truth,242,food,0.9888577764212656,2026-03-20T13:57:00Z
-txn_usr_priya_0012,usr_priya,Namma Yatri,210,transport,0.9840855893825988,2026-03-21T17:17:00Z
-txn_usr_priya_0013,usr_priya,iCloud+,199,subscription,0.9574817005458769,2026-03-22T10:10:00Z
-txn_usr_priya_0014,usr_priya,TenderCuts,549,groceries,0.9525060258177828,2026-03-22T16:26:00Z
-txn_usr_priya_0015,usr_priya,Jio,499,bills,0.9848041827271482,2026-03-23T16:36:00Z
-txn_usr_priya_0016,usr_priya,Air India,1180,transport,0.9668267719839746,2026-03-23T12:14:00Z
-txn_usr_priya_0017,usr_priya,Third Wave Coffee,1403,food,0.9822128486028354,2026-03-24T10:00:00Z
-txn_usr_priya_0018,usr_priya,Spencer's,234,groceries,0.972850137078535,2026-03-24T12:26:00Z
-txn_usr_priya_0019,usr_priya,KFC,1360,food,0.9873327406117673,2026-03-24T17:55:00Z
-txn_usr_priya_0020,usr_priya,LinkedIn Premium,1499,subscription,0.9673353945004058,2026-03-25T15:19:00Z
-txn_usr_priya_0021,usr_priya,Taco Bell,1125,food,0.9863465913510446,2026-03-26T18:45:00Z
-txn_usr_priya_0022,usr_priya,Zepto,579,groceries,0.966024518272776,2026-03-27T09:29:00Z
-txn_usr_priya_0023,usr_priya,Vi,999,bills,0.9503537102263413,2026-03-27T11:21:00Z
-txn_usr_priya_0024,usr_priya,Indian Oil,603,transport,0.9788066649761038,2026-03-27T09:53:00Z
-txn_usr_priya_0025,usr_priya,Airtel Xstream,499,subscription,0.9562634152755327,2026-03-28T21:39:00Z
-txn_usr_priya_0026,usr_priya,LinkedIn Premium,199,subscription,0.9789133782287508,2026-03-29T10:05:00Z
-txn_usr_priya_0027,usr_priya,KFC,155,food,0.9680626910430815,2026-03-30T18:21:00Z
-txn_usr_priya_0028,usr_priya,Croma,1473,shopping,0.9770571901306448,2026-03-30T20:19:00Z
-txn_usr_priya_0029,usr_priya,Natural Ice Cream,1294,food,0.9834319319779177,2026-03-30T15:06:00Z
-txn_usr_priya_0030,usr_priya,Voot,499,subscription,0.9617154776248256,2026-03-31T18:45:00Z
-txn_usr_priya_0031,usr_priya,Subway,1060,food,0.9570094159612992,2026-03-31T09:07:00Z
-txn_usr_priya_0032,usr_priya,Nature's Basket,1012,groceries,0.9816647836447584,2026-04-01T19:54:00Z
-txn_usr_priya_0033,usr_priya,Reliance Smart,219,groceries,0.9594604724463092,2026-04-02T17:41:00Z
-txn_usr_priya_0034,usr_priya,Nike,375,shopping,0.9805682530352312,2026-04-03T16:06:00Z
-txn_usr_priya_0035,usr_priya,Instamart,417,groceries,0.9745044559837871,2026-04-03T12:59:00Z
-txn_usr_priya_0036,usr_priya,YouTube Premium,199,subscription,0.9518235167161789,2026-04-04T09:51:00Z
-txn_usr_priya_0037,usr_priya,Haldirams,214,food,0.9786282538773372,2026-04-05T18:05:00Z
-txn_usr_priya_0038,usr_priya,Namma Yatri,1432,transport,0.9631016033220391,2026-04-05T21:32:00Z
-txn_usr_priya_0039,usr_priya,Vi,999,bills,0.9896644325425348,2026-04-06T17:28:00Z
-txn_usr_priya_0040,usr_priya,SBI Card,999,bills,0.9711614767486576,2026-04-06T13:10:00Z
-txn_usr_priya_0041,usr_priya,EatFit,949,food,0.9641460722242381,2026-04-06T10:50:00Z
-txn_usr_priya_0042,usr_priya,Dunzo,1008,groceries,0.9603390180587024,2026-04-07T19:27:00Z
-txn_usr_priya_0043,usr_priya,Reliance Digital,367,shopping,0.9756984959137229,2026-04-07T15:41:00Z
-txn_usr_priya_0044,usr_priya,Subway,194,food,0.9787983849520496,2026-04-07T12:22:00Z
-txn_usr_priya_0045,usr_priya,Bescom,199,bills,0.973159798126261,2026-04-08T12:23:00Z
-txn_usr_priya_0046,usr_priya,Blinkit,107,groceries,0.9611827945062521,2026-04-09T14:37:00Z
-txn_usr_priya_0047,usr_priya,BluSmart,1336,transport,0.980433993301284,2026-04-10T18:27:00Z
-txn_usr_priya_0048,usr_priya,Nike,751,shopping,0.977027128129351,2026-04-10T17:16:00Z
-txn_usr_priya_0049,usr_priya,Hathway,999,bills,0.9519796424304464,2026-04-11T12:43:00Z
-txn_usr_priya_0050,usr_priya,TenderCuts,974,groceries,0.9575368974778697,2026-04-11T18:12:00Z
-txn_usr_priya_0051,usr_priya,LIC Premium,999,bills,0.9770903195670502,2026-04-11T10:45:00Z
-txn_usr_priya_0052,usr_priya,Shoppers Stop,1307,shopping,0.9853373115142221,2026-04-12T21:04:00Z
-txn_usr_priya_0053,usr_priya,Baskin Robbins,707,food,0.9892226497075064,2026-04-12T18:16:00Z
-txn_usr_priya_0054,usr_priya,Air India,1414,transport,0.9517773956081427,2026-04-12T09:30:00Z
-txn_usr_priya_0055,usr_priya,Croma,778,shopping,0.9801829593704761,2026-04-13T19:04:00Z
-txn_usr_priya_0056,usr_priya,Behrouz Biryani,574,food,0.9834227722042092,2026-04-13T17:47:00Z
-txn_usr_priya_0057,usr_priya,LIC Premium,1499,bills,0.9669808973532301,2026-04-13T18:54:00Z
-txn_usr_priya_0058,usr_priya,Barbeque Nation,440,food,0.9840928251216978,2026-04-14T09:01:00Z
-txn_usr_priya_0059,usr_priya,JioCinema,999,subscription,0.9595607806365489,2026-04-14T13:25:00Z
-txn_usr_priya_0060,usr_priya,Country Delight,395,groceries,0.9579857574435214,2026-04-15T20:53:00Z
-txn_usr_priya_0061,usr_priya,Zepto,254,groceries,0.9776598360657,2026-04-15T17:28:00Z
+txn_priya_0001,usr_priya,DMart,342,groceries,0.98,2026-04-01T09:15:00Z
+txn_priya_0002,usr_priya,BMTC Bus Pass,650,transport,0.97,2026-04-01T08:30:00Z
+txn_priya_0003,usr_priya,Tata Power,890,bills,0.96,2026-04-02T10:20:00Z
+txn_priya_0004,usr_priya,Nilgiris,215,groceries,0.98,2026-04-02T11:05:00Z
+txn_priya_0005,usr_priya,Spotify,149,subscription,0.99,2026-04-03T09:00:00Z
+txn_priya_0006,usr_priya,Ola Auto,87,transport,0.96,2026-04-03T08:45:00Z
+txn_priya_0007,usr_priya,Reliance Fresh,478,groceries,0.97,2026-04-04T10:30:00Z
+txn_priya_0008,usr_priya,BESCOM Electricity,1050,bills,0.95,2026-04-04T11:00:00Z
+txn_priya_0009,usr_priya,Idli Darshini,65,food,0.98,2026-04-05T08:00:00Z
+txn_priya_0010,usr_priya,More Supermarket,380,groceries,0.96,2026-04-05T12:30:00Z
+txn_priya_0011,usr_priya,Namma Metro,120,transport,0.99,2026-04-06T09:15:00Z
+txn_priya_0012,usr_priya,Netflix,199,subscription,0.99,2026-04-06T10:00:00Z
+txn_priya_0013,usr_priya,Akshaya Canteen,45,food,0.97,2026-04-07T13:00:00Z
+txn_priya_0014,usr_priya,Star Bazaar,560,groceries,0.97,2026-04-07T11:30:00Z
+txn_priya_0015,usr_priya,Ola Auto,95,transport,0.96,2026-04-08T08:50:00Z
+txn_priya_0016,usr_priya,Airtel Postpaid,399,bills,0.98,2026-04-08T10:00:00Z
+txn_priya_0017,usr_priya,Saravana Bhavan,145,food,0.97,2026-04-09T13:15:00Z
+txn_priya_0018,usr_priya,DMart,289,groceries,0.98,2026-04-09T11:00:00Z
+txn_priya_0019,usr_priya,BMTC Bus,42,transport,0.97,2026-04-10T08:30:00Z
+txn_priya_0020,usr_priya,Amazon Prime,179,subscription,0.99,2026-04-10T09:00:00Z
+txn_priya_0021,usr_priya,Nilgiris,198,groceries,0.98,2026-04-11T10:45:00Z
+txn_priya_0022,usr_priya,Namma Metro,120,transport,0.99,2026-04-11T09:00:00Z
+txn_priya_0023,usr_priya,Akshaya Canteen,50,food,0.97,2026-04-12T13:00:00Z
+txn_priya_0024,usr_priya,BWSSB Water,350,bills,0.96,2026-04-12T10:30:00Z
+txn_priya_0025,usr_priya,Reliance Fresh,412,groceries,0.97,2026-04-13T11:15:00Z
+txn_priya_0026,usr_priya,Ola Auto,78,transport,0.96,2026-04-13T08:40:00Z
+txn_priya_0027,usr_priya,Darshini Hotel,80,food,0.97,2026-04-14T13:30:00Z
+txn_priya_0028,usr_priya,More Supermarket,320,groceries,0.96,2026-04-14T11:00:00Z
+txn_priya_0029,usr_priya,BMTC Bus,42,transport,0.97,2026-04-15T08:30:00Z
+txn_priya_0030,usr_priya,LIC Premium,1200,bills,0.97,2026-04-15T10:00:00Z
+txn_priya_0031,usr_priya,Star Bazaar,498,groceries,0.97,2026-04-16T11:30:00Z
+txn_priya_0032,usr_priya,Namma Metro,120,transport,0.99,2026-04-16T09:00:00Z
+txn_priya_0033,usr_priya,Akshaya Canteen,55,food,0.97,2026-04-17T13:00:00Z
+txn_priya_0034,usr_priya,DMart,356,groceries,0.98,2026-04-17T11:00:00Z
+txn_priya_0035,usr_priya,Ola Auto,90,transport,0.96,2026-04-17T08:45:00Z
+txn_priya_0036,usr_priya,Tata Power,870,bills,0.96,2026-04-17T10:30:00Z
+txn_priya_0037,usr_priya,Idli Darshini,60,food,0.98,2026-04-17T08:00:00Z
+txn_priya_0038,usr_priya,Nilgiris,240,groceries,0.98,2026-04-17T12:00:00Z
+txn_priya_0039,usr_priya,Namma Metro,120,transport,0.99,2026-04-17T09:15:00Z
+txn_priya_0040,usr_priya,Spotify,149,subscription,0.99,2026-04-17T09:30:00Z

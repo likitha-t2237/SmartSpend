@@ -35,28 +35,14 @@ const processDecision = async (user, aiContext, ruleResult, budgetResult) => {
     if (!proceedNudge) return null;
 
     // Process Investment Caps
+    // Process Investment Caps
     const inv = await Investment.findOne({ user_id: user.user_id });
     if (inv) {
         if ((inv.this_week + finalInvestAmount) > inv.weekly_cap) {
             finalInvestAmount = inv.weekly_cap - inv.this_week;
         }
-        if (finalInvestAmount > 0) {
-            inv.this_week += finalInvestAmount;
-            inv.this_month += finalInvestAmount;
-            inv.total_invested += finalInvestAmount;
-            await inv.save();
-            
-            await InvestmentLog.create({
-                log_id: `inv_${Date.now()}`,
-                user_id: user.user_id,
-                amount: finalInvestAmount,
-                source_category: aiContext.category,
-                risk_multiplier: aiContext.invest_multiplier || 1.0,
-                rule_id: ruleResult.rule_id,
-                reason: 'Auto-triggered',
-            });
-        }
     }
+
 
     // Call Gemini for context string
     const nudge = await generateNudge({

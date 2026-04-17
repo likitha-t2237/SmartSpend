@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 const Transaction = require('../models/Transaction');
 const User = require('../models/User');
+const Alert = require('../models/Alert');
+const Bill = require('../models/Bill');
 const mlService = require('../services/mlService');
 const budgetEngine = require('../services/budgetEngine');
 const ruleEngine = require('../services/ruleEngine');
 const { processDecision } = require('../services/nudgeDecision');
+const investEngine = require('../services/investEngine');
 const { getIo } = require('../sockets/socketHandlers');
 
 router.post('/', async (req, res) => {
@@ -22,7 +25,22 @@ router.post('/', async (req, res) => {
 
         // 2. ML Categorise
         const catResult = await mlService.categoriseTransaction(merchant_name, amount);
-        
+
+        // 2b. Bill Auto-Matching — check if this transaction pays a bill
+        try {
+            const merchantLower = merchant_name.toLowerCase();
+            const unpaidBills = await Bill.find({ user_id: user.user_id, status: 'unpaid' });
+            for (const bill of unpaidBills) {
+                if (bill.name.toLowerCase().includes(merchantLower) || merchantLower.includes(bill.name.toLowerCase())) {
+                    await Bill.findOneAndUpdate({ bill_id: bill.bill_id }, { status: 'paid' });
+                    io.emit('bill_paid', { payload: { user_id: user.user_id, bill_name: bill.name, amount: bill.amount } });
+                    break;
+                }
+            }
+        } catch (billErr) {
+            console.error('[BillMatcher] Non-critical error:', billErr.message);
+        }
+
         // 3. Create raw transaction
         const txn = new Transaction({
             transaction_id: `txn_${Date.now()}`,
@@ -100,7 +118,7 @@ router.post('/', async (req, res) => {
             txn.nudge_fired = true;
             txn.nudge_id = decision.nudgeId;
             txn.invest_triggered = decision.investAmount;
-            
+
             io.emit('nudge_fired', {
                 payload: {
                     user_id: user.user_id,
@@ -113,15 +131,35 @@ router.post('/', async (req, res) => {
                 }
             });
 
-            if (decision.investAmount > 0) {
-                io.emit('investment_made', {
-                    payload: {
-                        user_id: user.user_id,
-                        amount: decision.investAmount,
-                        category: catResult.category,
-                        source: 'auto_rule' // simplified
-                    }
+            // Write Alert to DB for Alerts Page
+            try {
+                const isCritical = scoreResult.risk_level === 'high' || scoreResult.risk_level === 'critical';
+                await Alert.create({
+                    alert_id: `alert_${Date.now()}_${Math.floor(Math.random() * 10000)}`,
+                    user_id: user.user_id,
+                    type: isCritical ? 'budget_exceeded' : 'nudge',
+                    title: isCritical ? `High Risk: ${merchant_name}` : `Smart Nudge on ${merchant_name}`,
+                    message: decision.message,
+                    severity: isCritical ? 'critical' : 'warning',
+                    metadata: { transaction_id: txn.transaction_id, amount, category: catResult.category, invest_amount: decision.investAmount }
                 });
+            } catch (alertErr) {
+                console.error('[AlertWriter] Non-critical error:', alertErr.message);
+            }
+
+            if (decision.investAmount > 0) {
+                const investResult = await investEngine.executeInvestment(user, decision, aiContext, ruleResult);
+                
+                if (investResult && investResult.success) {
+                    io.emit('investment_made', {
+                        payload: {
+                            user_id: user.user_id,
+                            amount: investResult.investedAmount,
+                            category: catResult.category,
+                            source: 'auto_rule'
+                        }
+                    });
+                }
             }
         }
 

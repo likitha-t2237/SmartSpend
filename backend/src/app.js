@@ -25,6 +25,13 @@ socketHandlers.initSockets(io);
 
 // Routes
 app.use('/api/transactions', require('./routes/transactions'));
+app.use('/api/user', require('./routes/user'));
+app.use('/api/wallet', require('./routes/wallet'));
+app.use('/api/goals', require('./routes/goals'));
+app.use('/api/insights', require('./routes/insights'));
+app.use('/api/alerts', require('./routes/alerts'));
+app.use('/api/analytics', require('./routes/analytics'));
+app.use('/api/bills', require('./routes/bills'));
 // Other route placeholders
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
