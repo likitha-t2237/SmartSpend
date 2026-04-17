@@ -42,20 +42,56 @@ User context:
         }
     }
 
-    // Fallback templates
-    let msg = "";
+    // --- Rich Personalised Fallback Templates ---
+    const isNight = flags.includes('night_transaction');
+    const isWeekend = flags.includes('weekend_spending');
+    const isBudgetCritical = flags.includes('budget_critical');
+    const isRapidReorder = flags.includes('rapid_reorder');
+    const isHighFrequency = flags.includes('high_frequency_same_category');
+    const inv = Math.round(investAmount);
+
+    const categoryLabels = {
+        food: 'food delivery', shopping: 'shopping', transport: 'transport',
+        groceries: 'groceries', entertainment: 'entertainment', subscriptions: 'subscriptions',
+        uncategorized: 'spending'
+    };
+    const catLabel = categoryLabels[category] || category;
+    const name = userName || 'Hey';
+
+    let msg = '';
+
     if (nudgeStyle === 'gentle') {
-        msg = `Hey ${userName}, another ₹${amount} on ${category}? Just a heads up depending on your goals.`;
+        if (isNight) {
+            msg = `${name}, late-night ${catLabel} (₹${amount}) can add up fast — your wallet is watching! 🌙`;
+        } else if (isWeekend) {
+            msg = `Weekend treat! Just a heads-up, ₹${amount} on ${catLabel} — stay mindful of your monthly plan, ${name}.`;
+        } else {
+            msg = `FYI ${name}: ₹${amount} on ${catLabel}. You still have ₹${Math.max(0, budgetRemaining).toLocaleString()} left in this category.`;
+        }
     } else if (nudgeStyle === 'moderate') {
-        msg = `${userName}, this ${category} transaction seems impulsive based on your pattern. We've moved ₹${investAmount} to your investment bucket!`;
-    } else {
-        msg = `Whoa ${userName}, multiple ${category} orders! We triggered a ₹${investAmount} investment. Check your budget limit!`;
+        if (isBudgetCritical && inv > 0) {
+            msg = `${name}, your ${catLabel} budget is almost gone. We've auto-moved ₹${inv} to your investment wallet to protect your savings goal 💰`;
+        } else if (isRapidReorder) {
+            msg = `Quick re-order alert, ${name}! Two ${catLabel} transactions close together — ₹${inv} nudged to your wallet as a small buffer.`;
+        } else if (isHighFrequency) {
+            msg = `${name}, ${catLabel} is your 3rd+ transaction today. Pattern detected! ₹${inv} redirected to investments to offset the impact.`;
+        } else {
+            msg = `${name}, this ${catLabel} spend (₹${amount}) triggered a smart redirect — ₹${inv} moved to your wallet. ${personalityLabel}s often overspend here!`;
+        }
+    } else { // aggressive / strong
+        if (riskLevel === 'high' || riskLevel === 'critical') {
+            msg = `🚨 ${name}! High-risk pattern detected — ₹${amount} on ${catLabel} when budget is critical. ₹${inv} force-invested NOW. Review your ${catLabel} limit!`;
+        } else if (isNight && isBudgetCritical) {
+            msg = `${name}, spending ₹${amount} on ${catLabel} at night with only ₹${Math.max(0, budgetRemaining).toLocaleString()} left? ₹${inv} locked away in investments. 🔒`;
+        } else {
+            msg = `STOP, ${name}! ₹${amount} on ${catLabel} pushed you into the danger zone. ₹${inv} automatically redirected. Your ${personalityLabel.toLowerCase()} pattern is costing you!`;
+        }
     }
 
     return {
         message: msg,
         intensity_used: nudgeStyle,
-        generated_by: "template"
+        generated_by: "smart-template"
     };
 };
 
